@@ -1,0 +1,22 @@
+h1 {
+	color: #32CD32;
+}
+
+p {
+	color: #32CD32;
+	width: 65%;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 20;
+}
+
+body {
+	background-color: black;
+	color: #32CD32;
+	text-align: center;
+}
+
+.finish-line {
+	background-color: white;
+}
+
