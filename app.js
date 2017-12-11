@@ -4,6 +4,7 @@
 //
 
 const moving = () => {
+	debugger;
 
 	let trackDistance = 50;
 	setTrack(0, trackDistance);
@@ -11,17 +12,17 @@ const moving = () => {
 
 	let distance = [0,0];
 	document.getElementById(distance[0]).style.backgroundColor = '#32CD32';
-	document.getElementById(distance[1]).style.backgroundColor = '#32CD32';
+	document.getElementById(trackDistance).style.backgroundColor = '#32CD32';
 	document.getElementById(trackDistance - 1).style.backgroundColor = 'white';
 	document.getElementById(trackDistance * 2 - 1).style.backgroundColor = 'white';
 
 	document.addEventListener('keyup', (event) => {
-		if (event.code === 'KeyD' && distance[0] < trackDistance - 1) {
+		if (event.code === 'ArrowRight' && distance[0] < trackDistance - 1) {
 			document.getElementById(distance[0] - 1).style.backgroundColor = 'black';
 			document.getElementById(distance[0]).style.backgroundColor = '#32CD32';
-		} else if (event.code === 'ArrowRight' && distance[1] < trackDistance - 1) {
+		} else if (event.code === 'KeyD' && distance[1] < trackDistance - 1) {
 			distance[1]++;
-			document.getElementById(trackDistance + distance[1]-1).style.backgroundColor = 'black';
+			document.getElementById(trackDistance + distance[1] - 1).style.backgroundColor = 'black';
 			document.getElementById(trackDistance + distance[1]).style.backgroundColor = '#32CD32';
 		}
 	});
