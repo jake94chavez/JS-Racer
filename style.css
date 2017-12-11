@@ -20,6 +20,11 @@ body {
 td {
 	height: 10px;
 }
+
+button {
+	margin-top: 20px
+}
+
 .finish-line {
 	background-color: white;
 }

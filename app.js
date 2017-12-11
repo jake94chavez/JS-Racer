@@ -47,3 +47,4 @@ const setTrack = (user, length) => {
 window.onload = () => {
 	moving();
 }
+
