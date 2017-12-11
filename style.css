@@ -17,6 +17,9 @@ body {
 	text-align: center;
 }
 
+td {
+	height: 10px;
+}
 .finish-line {
 	background-color: white;
 }
