@@ -4,8 +4,6 @@
 //
 
 const moving = () => {
-	debugger;
-
 	let trackDistance = 50;
 	setTrack(0, trackDistance);
 	setTrack(1, trackDistance);
@@ -18,6 +16,7 @@ const moving = () => {
 
 	document.addEventListener('keyup', (event) => {
 		if (event.code === 'ArrowRight' && distance[0] < trackDistance - 1) {
+			distance[0]++
 			document.getElementById(distance[0] - 1).style.backgroundColor = 'black';
 			document.getElementById(distance[0]).style.backgroundColor = '#32CD32';
 		} else if (event.code === 'KeyD' && distance[1] < trackDistance - 1) {
